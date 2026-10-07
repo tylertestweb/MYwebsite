@@ -1,0 +1,38 @@
+cd /d "C:\Users\Treym\Videos\Captures\Website1"
+mkdir my-api
+cd my-api
+npm init -y
+npm install express mssql
+
+After running them, you'll have:
+
+Website1
+│
+├── your existing website files
+│
+└── my-api
+    ├── node_modules
+    ├── package.json
+    └── package-lock.json
+What each command does
+cd /d "C:\Users\Treym\Videos\Captures\Website1"
+
+➡️ Moves Command Prompt into your website folder.
+
+mkdir my-api
+
+➡️ Creates a new folder called my-api.
+
+cd my-api
+
+➡️ Goes inside that folder.
+
+npm init -y
+
+➡️ Creates the package.json for your Node project.
+
+npm install express mssql
+
+➡️ Installs Express (our API/server) and mssql (the package we'll use to talk to SQL Server).
+
+Don't worry if node_modules becomes huge. That's normal.
