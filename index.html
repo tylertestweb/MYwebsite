@@ -92,7 +92,7 @@
             <!-- Food Cards -->
             <div id="foodContainer" class="food-grid">
 
-
+                <!-- Burger -->
                 <article class="food-card" data-name="burger">
 
                     <div class="food-image burger">
@@ -130,6 +130,7 @@
                 </article>
 
 
+                <!-- Pizza -->
                 <article class="food-card" data-name="pizza">
 
                     <div class="food-image pizza">
@@ -146,4 +147,339 @@
                         <h3>Classic Pizza</h3>
 
                         <p>
+                            Fresh tomato sauce, melted cheese
+                            and your favourite toppings.
+                        </p>
 
+                        <div class="food-bottom">
+
+                            <strong>R120</strong>
+
+                            <button
+                                class="order-button"
+                                data-food="Classic Pizza"
+                            >
+                                Order
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Pasta -->
+                <article class="food-card" data-name="pasta">
+
+                    <div class="food-image pasta">
+                        🍝
+                    </div>
+
+                    <div class="food-info">
+
+                        <span class="category">
+                            PASTA
+                        </span>
+
+                        <h3>Creamy Pasta</h3>
+
+                        <p>
+                            Creamy pasta with herbs and
+                            a rich homemade sauce.
+                        </p>
+
+                        <div class="food-bottom">
+
+                            <strong>R95</strong>
+
+                            <button
+                                class="order-button"
+                                data-food="Creamy Pasta"
+                            >
+                                Order
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Chicken -->
+                <article class="food-card" data-name="chicken">
+
+                    <div class="food-image chicken">
+                        🍗
+                    </div>
+
+                    <div class="food-info">
+
+                        <span class="category">
+                            CHICKEN
+                        </span>
+
+                        <h3>Grilled Chicken</h3>
+
+                        <p>
+                            Tender grilled chicken served
+                            with fresh sides.
+                        </p>
+
+                        <div class="food-bottom">
+
+                            <strong>R110</strong>
+
+                            <button
+                                class="order-button"
+                                data-food="Grilled Chicken"
+                            >
+                                Order
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Salad -->
+                <article class="food-card" data-name="salad">
+
+                    <div class="food-image salad">
+                        🥗
+                    </div>
+
+                    <div class="food-info">
+
+                        <span class="category">
+                            SALAD
+                        </span>
+
+                        <h3>Fresh Salad</h3>
+
+                        <p>
+                            Crisp vegetables, fresh greens
+                            and our house dressing.
+                        </p>
+
+                        <div class="food-bottom">
+
+                            <strong>R75</strong>
+
+                            <button
+                                class="order-button"
+                                data-food="Fresh Salad"
+                            >
+                                Order
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Dessert -->
+                <article class="food-card" data-name="dessert">
+
+                    <div class="food-image dessert">
+                        🍰
+                    </div>
+
+                    <div class="food-info">
+
+                        <span class="category">
+                            DESSERT
+                        </span>
+
+                        <h3>Chocolate Cake</h3>
+
+                        <p>
+                            Rich chocolate cake with
+                            creamy chocolate icing.
+                        </p>
+
+                        <div class="food-bottom">
+
+                            <strong>R60</strong>
+
+                            <button
+                                class="order-button"
+                                data-food="Chocolate Cake"
+                            >
+                                Order
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- About -->
+        <section id="about" class="about-section">
+
+            <div class="about-content">
+
+                <div>
+
+                    <p class="tag">
+                        ABOUT US
+                    </p>
+
+                    <h2>
+                        Simple food.
+                        <br>
+                        Done properly.
+                    </h2>
+
+                </div>
+
+                <div>
+
+                    <p>
+                        Tyler's Kitchen is all about keeping food
+                        simple, fresh and delicious.
+                    </p>
+
+                    <br>
+
+                    <p>
+                        No complicated menus. Just good meals
+                        made with quality ingredients.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Order -->
+        <section id="order" class="order-section">
+
+            <div class="section-heading">
+
+                <p class="tag">
+                    ORDER
+                </p>
+
+                <h2>
+                    What can we make for you?
+                </h2>
+
+                <p>
+                    Choose your meal and send us your details.
+                </p>
+
+            </div>
+
+
+            <form id="orderForm" class="order-form">
+
+                <label for="name">
+                    Your Name
+                </label>
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Enter your name"
+                    required
+                >
+
+
+                <label for="food">
+                    Choose your meal
+                </label>
+
+                <select id="food" required>
+
+                    <option value="">
+                        Select a meal
+                    </option>
+
+                    <option value="Classic Burger">
+                        Classic Burger
+                    </option>
+
+                    <option value="Classic Pizza">
+                        Classic Pizza
+                    </option>
+
+                    <option value="Creamy Pasta">
+                        Creamy Pasta
+                    </option>
+
+                    <option value="Grilled Chicken">
+                        Grilled Chicken
+                    </option>
+
+                    <option value="Fresh Salad">
+                        Fresh Salad
+                    </option>
+
+                    <option value="Chocolate Cake">
+                        Chocolate Cake
+                    </option>
+
+                </select>
+
+
+                <label for="message">
+                    Additional Message
+                </label>
+
+                <textarea
+                    id="message"
+                    rows="5"
+                    placeholder="Anything else you'd like us to know?"
+                ></textarea>
+
+
+                <button
+                    type="submit"
+                    class="button"
+                >
+                    Place Order
+                </button>
+
+            </form>
+
+
+            <div
+                id="orderMessage"
+                class="order-message"
+            ></div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <p>
+            © 2026 Tyler's Kitchen. All rights reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

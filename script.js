@@ -1,12 +1,70 @@
-const button = document.getElementById("button");
-const result = document.getElementById("result");
+// =========================
+// FOOD SEARCH
+// =========================
 
-button.onclick = async function() {
+const searchInput = document.getElementById("foodSearch");
+const foodCards = document.querySelectorAll(".food-card");
 
-    const response = await fetch("https://jsonplaceholder.typicode.com/todos/1");
+searchInput.addEventListener("input", function () {
 
-    const data = await response.json();
+    const searchValue = searchInput.value.toLowerCase();
 
-    result.textContent = data.title;
-};
+    foodCards.forEach(function (card) {
 
+        const foodName = card.dataset.name.toLowerCase();
+
+        if (foodName.includes(searchValue)) {
+            card.style.display = "block";
+        } else {
+            card.style.display = "none";
+        }
+
+    });
+
+});
+
+
+// =========================
+// ORDER BUTTONS
+// =========================
+
+const orderButtons = document.querySelectorAll(".order-button");
+const foodSelect = document.getElementById("food");
+
+orderButtons.forEach(function (button) {
+
+    button.addEventListener("click", function () {
+
+        const selectedFood = button.dataset.food;
+
+        foodSelect.value = selectedFood;
+
+        document.getElementById("order").scrollIntoView({
+            behavior: "smooth"
+        });
+
+    });
+
+});
+
+
+// =========================
+// ORDER FORM
+// =========================
+
+const orderForm = document.getElementById("orderForm");
+const orderMessage = document.getElementById("orderMessage");
+
+orderForm.addEventListener("submit", function (event) {
+
+    event.preventDefault();
+
+    const name = document.getElementById("name").value;
+    const food = foodSelect.value;
+
+    orderMessage.textContent =
+        "Thanks " + name + "! Your " + food + " order has been received.";
+
+    orderForm.reset();
+
+});
