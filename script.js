@@ -9,3 +9,4 @@ button.onclick = async function() {
 
     result.textContent = data.title;
 };
+

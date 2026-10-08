@@ -1,19 +1,150 @@
+```html
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>REST API Test</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tyler's Kitchen</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <h1 id="title">My REST API Test</h1>
+    <!-- Navigation -->
+    <header class="header">
 
-    <button id="button">Get Data</button>
+        <nav class="navbar">
 
-    <p id="result"></p>
+            <div class="logo">
+                Tyler<span>'s</span> Kitchen
+            </div>
 
-    <script src="script.js"></script>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#menu">Menu</a>
+                <a href="#about">About</a>
+                <a href="#order">Order</a>
+            </div>
 
-</body>
-</html>
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <!-- Hero -->
+        <section id="home" class="hero">
+
+            <div class="hero-content">
+
+                <p class="tag">GOOD FOOD • GOOD MOOD</p>
+
+                <h1>
+                    Food made
+                    <span>simple.</span>
+                </h1>
+
+                <p class="hero-text">
+                    Fresh, delicious meals made for people who
+                    just want good food.
+                </p>
+
+                <a href="#menu" class="button">
+                    View Menu
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- Menu -->
+        <section id="menu" class="menu-section">
+
+            <div class="section-heading">
+
+                <p class="tag">OUR MENU</p>
+
+                <h2>What are you hungry for?</h2>
+
+                <p>
+                    Choose from some of our favourite meals.
+                </p>
+
+            </div>
+
+
+            <!-- Search -->
+            <div class="search-container">
+
+                <input
+                    type="text"
+                    id="foodSearch"
+                    placeholder="Search for food..."
+                >
+
+            </div>
+
+
+            <!-- Food Cards -->
+            <div id="foodContainer" class="food-grid">
+
+
+                <article class="food-card" data-name="burger">
+
+                    <div class="food-image burger">
+                        🍔
+                    </div>
+
+                    <div class="food-info">
+
+                        <span class="category">
+                            BURGER
+                        </span>
+
+                        <h3>Classic Burger</h3>
+
+                        <p>
+                            Juicy beef patty, fresh lettuce,
+                            tomato and our house sauce.
+                        </p>
+
+                        <div class="food-bottom">
+
+                            <strong>R85</strong>
+
+                            <button
+                                class="order-button"
+                                data-food="Classic Burger"
+                            >
+                                Order
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <article class="food-card" data-name="pizza">
+
+                    <div class="food-image pizza">
+                        🍕
+
+                    </div>
+
+                    <div class="food-info">
+
+                        <span class="category">
+                            PIZZA
+                        </span>
+
+                        <h3>Classic Pizza</h3>
+
+                        <p>
+```
